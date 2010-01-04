@@ -20,7 +20,7 @@ namespace deliberate {
   std::string ProgramVersion("0.3pre");
 
   std::string ProgramName("drss");
-  std::string copyright ("Copyright (C) 2009 Bernd H Stramm");
+  std::string copyright ("Copyright (C) 2009,2010 Bernd H Stramm");
   
   std::string Version ()
   { 
