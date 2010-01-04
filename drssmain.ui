@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Bernd Stramm</author>
+ <class>DRSSMain</class>
+ <widget class="QMainWindow" name="DRSSMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DRSS News Reader</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="drss.qrc">
+    <normaloff>:/drsslogo.png</normaloff>:/drsslogo.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="vsplitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QGridLayout" name="gridLayout" rowstretch="1,0" columnstretch="1,0,0,0,0,0">
+        <item row="0" column="5">
+         <widget class="QListWidget" name="storyView">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Headlines of news stories on the  selected feed</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::CurrentChanged|QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="showDropIndicator" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="linkButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Visit the web site for this story</string>
+          </property>
+          <property name="locale">
+           <locale language="English" country="Canada"/>
+          </property>
+          <property name="text">
+           <string>visit
+story</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="nextStoryButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Move forward one story</string>
+          </property>
+          <property name="text">
+           <string>next
+story</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4" colspan="2">
+         <widget class="QTextBrowser" name="storyTitle">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Title of the current news story</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="backStoryButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Move back one story</string>
+          </property>
+          <property name="text">
+           <string>back</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="4">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0" colspan="3">
+           <widget class="QTextEdit" name="nickLine">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Currently selected news feed</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="loadingLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Loading feed content</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="exitButton">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Close the program, stop reading news, get on with your life.</string>
+            </property>
+            <property name="text">
+             <string>Exit</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="busyCount">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Number of open update queries</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="deliberate::ADClock" name="clockWidget" native="true">
+          <property name="toolTip">
+           <string>Clock showing your system time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="mailButton">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Mail</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QSplitter" name="storySplit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QTreeView" name="feedTree">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>10000</width>
+          <height>10000</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Your news feeds</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>true</bool>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::InternalMove</enum>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="indentation">
+         <number>10</number>
+        </property>
+        <property name="uniformRowHeights">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="headerVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QWebView" name="storyBrowser">
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>The current news story</string>
+        </property>
+        <property name="url">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+        <property name="zoomFactor">
+         <double>0.899999976158142</double>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>627</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menu_Import">
+     <property name="title">
+      <string>&amp;Import</string>
+     </property>
+     <addaction name="importDRSS"/>
+     <addaction name="importOPML"/>
+    </widget>
+    <addaction name="menu_Import"/>
+    <addaction name="actionSave_Feed_List"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="editFeed"/>
+    <addaction name="editNewFeed"/>
+    <addaction name="editNewFolder"/>
+    <addaction name="editPrefs"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="showAbout_DRSS"/>
+    <addaction name="actionUser_Manual"/>
+    <addaction name="actionLicense"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>E&amp;xit</string>
+    </property>
+    <addaction name="actionExit1"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuExit"/>
+  </widget>
+  <action name="importDRSS">
+   <property name="text">
+    <string>DRSS Feed List</string>
+   </property>
+  </action>
+  <action name="importOPML">
+   <property name="text">
+    <string>OPML Feed List</string>
+   </property>
+  </action>
+  <action name="editFeed">
+   <property name="text">
+    <string>&amp;Edit Feed</string>
+   </property>
+  </action>
+  <action name="editPrefs">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+  </action>
+  <action name="editNewFeed">
+   <property name="text">
+    <string>New &amp;Feed</string>
+   </property>
+  </action>
+  <action name="actionSave_Feed_List">
+   <property name="text">
+    <string>&amp;Save Feed List</string>
+   </property>
+  </action>
+  <action name="showAbout_DRSS">
+   <property name="text">
+    <string>&amp;About DRSS</string>
+   </property>
+  </action>
+  <action name="showCredits">
+   <property name="text">
+    <string>Cre&amp;dits</string>
+   </property>
+  </action>
+  <action name="showLicense">
+   <property name="text">
+    <string>&amp;License</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionExit1">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="editNewFolder">
+   <property name="text">
+    <string>New F&amp;older</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="text">
+    <string>Save Feeds &amp;As..</string>
+   </property>
+  </action>
+  <action name="actionUser_Manual">
+   <property name="text">
+    <string>&amp;User Manual</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>&amp;License</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="1" margin="1"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>deliberate::ADClock</class>
+   <extends>QWidget</extends>
+   <header location="global">aclock.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="drss.qrc"/>
+ </resources>
+ <connections/>
+</ui>

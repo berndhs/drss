@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<drssfeedlist version="1.0" >
+ <feed hash="b7c58d81c48c3ba5d85de56631041f9ccb30a983" >
+  <language></language>
+  <xmlUrl>http://feeds.latimes.com/latimes/news/nationworld/world</xmlUrl>
+  <title>L.A. Times - World News</title>
+  <description>L.A. Times - World News</description>
+  <imageUrl></imageUrl>
+  <nick>L.A. Times - World News</nick>
+  <webUrl>http://www.latimes.com/news/nationworld/world/?track=rss</webUrl>
+ </feed>
+ <feed hash="cec8ea3a134736a7c34af903e702b8d800e71be1" >
+  <language></language>
+  <xmlUrl>http://feeds.reuters.com/reuters/oddlyEnoughNews</xmlUrl>
+  <title>Reuters: Oddly Enough</title>
+  <description>Reuters: Oddly Enough</description>
+  <imageUrl></imageUrl>
+  <nick>Reuters: Oddly Enough</nick>
+  <webUrl>http://www.reuters.com</webUrl>
+ </feed>
+ <folder name="Blogs" hash="da39a3ee5e6b4b0d3255bfef95601890afd80709" >
+  <feed hash="1ee6da995608f4cf1f5fd7fb678443911e88f08e" >
+   <language></language>
+   <xmlUrl>http://dailygrail.com/rss.xml</xmlUrl>
+   <title>TDG - Science, Magick, Myth and History</title>
+   <description>TDG - Science, Magick, Myth and History</description>
+   <imageUrl></imageUrl>
+   <nick>TDG - Science, Magick, Myth and History</nick>
+   <webUrl>http://dailygrail.com</webUrl>
+  </feed>
+ </folder>
+</drssfeedlist>

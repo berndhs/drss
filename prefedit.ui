@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Bernd Stramm</author>
+ <class>PrefEditForm</class>
+ <widget class="QDialog" name="PrefEditForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>169</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Preferences</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="feedFileEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="feedListFileLabel">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Feed List File</string>
+       </property>
+       <property name="buddy">
+        <cstring>feedFileEdit</cstring>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="optionsLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="analogClockLabel">
+       <property name="text">
+        <string>Show Clock</string>
+       </property>
+       <property name="buddy">
+        <cstring>showAnalogCheck</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="showAnalogCheck"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="saveOnExitLabel">
+       <property name="text">
+        <string>Save On Exit</string>
+       </property>
+       <property name="buddy">
+        <cstring>saveOnExitCheck</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="saveOnExitCheck"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="storyTextSizeLabel">
+       <property name="text">
+        <string>Story Text Size (%)</string>
+       </property>
+       <property name="buddy">
+        <cstring>storyTextSize</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="storyTextSize">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Scale the story text by this percentage</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="minimum">
+        <number>25</number>
+       </property>
+       <property name="maximum">
+        <number>300</number>
+       </property>
+       <property name="value">
+        <number>75</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="defaultsButton">
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Reset to Defaults</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="cancelButton">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="okButton">
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Save Settings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="2"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+  <file>drsslogo.png</file>
+  <file>loading.png</file>
+  <file>notloading.png</file>
+  <file>LICENSE.txt</file>
+  <file>helpman.html</file>
+  <file>backbutton.jpg</file>
+  <file>visitstorybutton.jpg</file>
+  <file>exitbutton.jpg</file>
+  <file>nextstorybutton.jpg</file>
+  <file>clock.jpg</file>
+</qresource>
+</RCC>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drssfeedlist version="1.0">
+  <feed>
+   <language>en</language>
+   <title>Pirx News</title>
+   <xmlUrl>http://pirx/news.php</xmlUrl>
+   <webUrl>http://pirx</webUrl>
+   <description>Pirx RSS News Feed</description>
+   <imageUrl>http://pirx/sites/bernd2009/public_html/bernd.png</imageUrl>
+   <nick> </nick>
+  </feed>
+  <feed>
+   <title>TDG - Science, Magick, Myth and History</title>
+   <xmlUrl>http://dailygrail.com/rss.xml</xmlUrl>
+   <webUrl>http://dailygrail.com</webUrl>
+   <description> hmm </description>
+   <language>en</language>
+   <nick>TDG News</nick>
+  </feed>
+  <feed>
+   <title>Ares</title>
+   <xmlUrl>http://sitelife.aviationweek.com/ver1.0/Blog/BlogRss?plckBlogId=Blog:27ec4a53-dcc8-42d0-bd3a-01329aef79a7</xmlUrl>
+   <webUrl></webUrl>
+   <description> hmm </description>
+   <language>en</language>
+   <nick>Ares News</nick>
+  </feed>
+  <feed>
+  <xmlUrl>http://rss.nascar.com/rss/drivers_jmontoya.rss</xmlUrl>
+  <webUrl>http://nascar.com?eref=/drivers/dps/jmontoya</webUrl>
+  </feed>
+  <feed>
+  <xmlUrl>http://rss.slashdot.org/Slashdot/slashdotScience</xmlUrl>
+<nick>Slashdot Science</nick>
+</feed>
+<feed>
+<xmlUrl>http://www.welt.de/wissenschaft/?service=R
+ss</xmlUrl>
+<nick>Welt Wissenschaft</nick>
+</feed>
+<feed>
+<xmlUrl>http://debatte.welt.de/feeds/rss2?type=7&amp;vid=6</xmlUrl>
+<nick>Zippert</nick>
+</feed>
+<feed>
+<xmlUrl>http://rss.csmonitor.com/feeds/usa</xmlUrl>
+<nick>Monitor USA</nick>
+</feed>
+<feed>
+<xmlUrl>http://sitelife.aviationweek.com/ver1.0/Blog/BlogRss?plckBlogId=Blog:04ce340e-4b63-4d23-9695-d49ab661f385</xmlUrl>
+<nick>Aviation Week Space</nick>
+</feed>
+<feed>
+<xmlUrl>http://weeklyb.blogspot.com/atom.xml</xmlUrl>
+<nick>Weekly B</nick>
+</feed>
+<feed>
+<xmlUrl>http://lemons4freedom.blogspot.com/atom.xml</xmlUrl>
+<webUrl>http://lemons4freedom.blogspot.com/</webUrl>
+<nick>Laura's Recipes</nick>
+</feed>
+</drssfeedlist>

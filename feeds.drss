@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8'?>
+<drssfeedlist version="1.0" >
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://dailygrail.com/rss.xml</xmlUrl>
+  <title>TDG - Science, Magick, Myth and History</title>
+  <description>TDG - Science, Magick, Myth and History</description>
+  <imageUrl></imageUrl>
+  <nick>TDG - Science, Magick, Myth and History</nick>
+  <webUrl>http://dailygrail.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://debatte.welt.de/feeds/rss2?type=7&amp;vid=6</xmlUrl>
+  <title>WELT DEBATTE - Kolumnen - Zippert zappt</title>
+  <description>WELT DEBATTE - Kolumnen - Zippert zappt</description>
+  <imageUrl></imageUrl>
+  <nick>WELT DEBATTE - Kolumnen - Zippert zappt</nick>
+  <webUrl>http://debatte.welt.de/kolumnen/6/zippert+zappt</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://fedoraproject.org/infofeed/rss20.xml</xmlUrl>
+  <title>Fedora Info</title>
+  <description>Fedora Info</description>
+  <imageUrl></imageUrl>
+  <nick>Fedora Info</nick>
+  <webUrl>http://fedoraproject.org/infofeed/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.latimes.com/latimes/news/local</xmlUrl>
+  <title>L.A. Times - California | Local News</title>
+  <description>L.A. Times - California | Local News</description>
+  <imageUrl></imageUrl>
+  <nick>L.A. Times - California | Local News</nick>
+  <webUrl>http://www.latimes.com/news/local/?track=rss</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.latimes.com/latimes/news/nationworld/world</xmlUrl>
+  <title>L.A. Times - World News</title>
+  <description>L.A. Times - World News</description>
+  <imageUrl></imageUrl>
+  <nick>L.A. Times - World News</nick>
+  <webUrl>http://www.latimes.com/news/nationworld/world/?track=rss</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.latimes.com/latimes/sports/motorracing/</xmlUrl>
+  <title>L.A. Times - Auto Racing</title>
+  <description>L.A. Times - Auto Racing</description>
+  <imageUrl></imageUrl>
+  <nick>L.A. Times - Auto Racing</nick>
+  <webUrl>http://www.latimes.com/sports/motorracing/?track=rss</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.reuters.com/reuters/oddlyEnoughNews</xmlUrl>
+  <title>Reuters: Oddly Enough</title>
+  <description>Reuters: Oddly Enough</description>
+  <imageUrl></imageUrl>
+  <nick>Reuters: Oddly Enough</nick>
+  <webUrl>http://www.reuters.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.reuters.com/reuters/scienceNews</xmlUrl>
+  <title>Reuters: Science News</title>
+  <description>Reuters: Science News</description>
+  <imageUrl></imageUrl>
+  <nick>Reuters: Science News</nick>
+  <webUrl>http://www.reuters.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.timesonline.co.uk/c/32313/f/440134/index.rss</xmlUrl>
+  <title>Top stories from Times Online</title>
+  <description>Top stories from Times Online</description>
+  <imageUrl></imageUrl>
+  <nick>London Times top stories</nick>
+  <webUrl>http://www.timesonline.co.uk</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.timesonline.co.uk/c/32313/f/463695/index.rss</xmlUrl>
+  <title>Sports News from Times Online</title>
+  <description>Sports News from Times Online</description>
+  <imageUrl></imageUrl>
+  <nick>London Times Online sports</nick>
+  <webUrl>http://www.timesonline.co.uk</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.washingtonpost.com/wp-dyn/rss/world/europe/index_xml</xmlUrl>
+  <title>Wash Post Europe</title>
+  <description>Wash Post Europe</description>
+  <imageUrl></imageUrl>
+  <nick>Wash Post Europe</nick>
+  <webUrl>http://www.washingtonpost.com/wp-dyn/content/world/europe/index.html?wprss=rss_world/europe</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://feeds.washingtonpost.com/wp-dyn/rss/world/northamerica/index_xml</xmlUrl>
+  <title>Wash Post North America</title>
+  <description>Wash Post North America</description>
+  <imageUrl></imageUrl>
+  <nick>Wash Post North America</nick>
+  <webUrl>http://www.washingtonpost.com/wp-dyn/content/world/northamerica/index.html?wprss=rss_world/northamerica</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://newsfeed.zeit.de/index</xmlUrl>
+  <title>ZEIT ONLINE Startseite</title>
+  <description>ZEIT ONLINE Startseite</description>
+  <imageUrl></imageUrl>
+  <nick>ZEIT ONLINE Startseite</nick>
+  <webUrl>http://www.zeit.de/index</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://newsfeed.zeit.de/sport/index</xmlUrl>
+  <title>Zeit Sport</title>
+  <description>Sport</description>
+  <imageUrl></imageUrl>
+  <nick>Sport in der Zeit</nick>
+  <webUrl>http://www.zeit.de/sport/index</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://newsfeed.zeit.de/wissen/index</xmlUrl>
+  <title>Wissen</title>
+  <description>Wissen</description>
+  <imageUrl></imageUrl>
+  <nick>Zeit Wissen</nick>
+  <webUrl>http://www.zeit.de/wissen/index</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://pirx/news.php</xmlUrl>
+  <title>another copy of the pirx feed</title>
+  <description>Should be the same as the other Pirx feed.</description>
+  <imageUrl></imageUrl>
+  <nick>Pirx 2</nick>
+  <webUrl>http://pirx</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.csmonitor.com/feeds/commentary</xmlUrl>
+  <title>Christian Science Monitor Commentary</title>
+  <description>Christian Science Monitor | Commentary</description>
+  <imageUrl></imageUrl>
+  <nick>CSM Commentary</nick>
+  <webUrl>http://www.csmonitor.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.csmonitor.com/feeds/scitech</xmlUrl>
+  <title>CS Monitor Innovation</title>
+  <description>Innovation articles at Christian Science Monitor</description>
+  <imageUrl></imageUrl>
+  <nick>CSM Innovation</nick>
+  <webUrl>http://www.csmonitor.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.csmonitor.com/feeds/usa</xmlUrl>
+  <title>Christian Science Monitor | USA</title>
+  <description>Christian Science Monitor Articles about USA</description>
+  <imageUrl></imageUrl>
+  <nick>CSM USA</nick>
+  <webUrl>http://www.csmonitor.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.csmonitor.com/feeds/world</xmlUrl>
+  <title>Christian Science Monitor | World</title>
+  <description>Christian Science Monitor articles about World issues</description>
+  <imageUrl></imageUrl>
+  <nick>CSM World</nick>
+  <webUrl>http://www.csmonitor.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.feedsportal.com/feed/motorsporttotal/us_racing</xmlUrl>
+  <title>US-Racing bei Motorsport-Total.com</title>
+  <description>US-Racing bei Motorsport-Total.com</description>
+  <imageUrl></imageUrl>
+  <nick>US-Racing bei Motorsport-Total.com</nick>
+  <webUrl>http://www.motorsport-total.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.kicker.de/team/borussiadortmund</xmlUrl>
+  <title>kicker online: Teamnews - Borussia Dortmund</title>
+  <description>kicker online: Teamnews - Borussia Dortmund</description>
+  <imageUrl></imageUrl>
+  <nick>kicker online: Borussia Dortmund</nick>
+  <webUrl>http://rss.kicker.derss.kicker.de/team/borussiadortmund</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.nascar.com/rss/drivers_jmontoya.rss</xmlUrl>
+  <title>NASCAR.COM - Juan Montoya</title>
+  <description>NASCAR.COM - Juan Montoya</description>
+  <imageUrl></imageUrl>
+  <nick>NASCAR.COM - Juan Montoya</nick>
+  <webUrl>http://nascar.com?eref=/drivers/dps/jmontoya</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.nascar.com/rss/news_business.rss</xmlUrl>
+  <title>NASCAR.COM - Business</title>
+  <description>NASCAR.COM - Business</description>
+  <imageUrl></imageUrl>
+  <nick>NASCAR.COM - Business</nick>
+  <webUrl>http://nascar.com?eref=/news/business</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.nascar.com/rss/news_cup.rss</xmlUrl>
+  <title>NASCAR.COM - Sprint Cup Series Headlines</title>
+  <description>NASCAR.COM - Sprint Cup Series Headlines</description>
+  <imageUrl></imageUrl>
+  <nick>NASCAR.COM - Sprint Cup Series Headlines</nick>
+  <webUrl>http://nascar.com?eref=/news/headlines/cup</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.slashdot.org/Slashdot/slashdotAskSlashdot</xmlUrl>
+  <title>Slashdot: Ask Slashdot</title>
+  <description>Slashdot: Ask Slashdot</description>
+  <imageUrl></imageUrl>
+  <nick>Slashdot: Ask Slashdot</nick>
+  <webUrl>http://ask.slashdot.org/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.slashdot.org/Slashdot/slashdotHardware</xmlUrl>
+  <title>Slashdot: Hardware</title>
+  <description>Slashdot: Hardware</description>
+  <imageUrl></imageUrl>
+  <nick>Slashdot: Hardware</nick>
+  <webUrl>http://hardware.slashdot.org/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.slashdot.org/Slashdot/slashdotLinux</xmlUrl>
+  <title>Slashdot: Linux</title>
+  <description>Slashdot: Linux</description>
+  <imageUrl></imageUrl>
+  <nick>Slashdot: Linux</nick>
+  <webUrl>http://linux.slashdot.org/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://rss.slashdot.org/Slashdot/slashdotScience</xmlUrl>
+  <title>Slashdot: Science</title>
+  <description>Slashdot: Science</description>
+  <imageUrl></imageUrl>
+  <nick>Slashdot: Science</nick>
+  <webUrl>http://science.slashdot.org/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://sitelife.aviationweek.com/ver1.0/Blog/BlogRss?plckBlogId=Blog:04ce340e-4b63-4d23-9695-d49ab661f385</xmlUrl>
+  <title>On Space</title>
+  <description>On Space</description>
+  <imageUrl></imageUrl>
+  <nick>On Space</nick>
+  <webUrl>http://www.aviationweek.com/aw/blogs/space/index.jsp?plckBlogPage=Blog</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://sitelife.aviationweek.com/ver1.0/Blog/BlogRss?plckBlogId=Blog:27ec4a53-dcc8-42d0-bd3a-01329aef79a7</xmlUrl>
+  <title>Ares</title>
+  <description>Ares</description>
+  <imageUrl></imageUrl>
+  <nick>Ares</nick>
+  <webUrl>http://www.aviationweek.com/aw/blogs/defense/index.jsp?plckBlogPage=Blog</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://sitelife.aviationweek.com/ver1.0/Blog/BlogRss?plckBlogId=Blog:2f16318d-d960-4e49-bc9f-86f1805f2c7f</xmlUrl>
+  <title>Business Aviation Now</title>
+  <description>Business Aviation Now</description>
+  <imageUrl></imageUrl>
+  <nick>Business Aviation Now</nick>
+  <webUrl>http://www.aviationweek.com/aw/blogs/business_aviation/index.jsp?plckBlogPage=Blog</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://sourceforge.net/export/rss2_keepsake.php?group_id=294061</xmlUrl>
+  <title>http://sourceforge.net/export/rss2_keepsake.php?group_id=294061</title>
+  <description></description>
+  <imageUrl></imageUrl>
+  <nick>http://sourceforge.net/export/rss2_keepsake.php?group_id=294061</nick>
+  <webUrl></webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://timesonline.typepad.com/science/rss.xml</xmlUrl>
+  <title>Times Online - Eureka Zone - WBLG</title>
+  <description>Times Online - Eureka Zone - WBLG</description>
+  <imageUrl></imageUrl>
+  <nick>Times Online - Eureka Zone - WBLG</nick>
+  <webUrl>http://timesonline.typepad.com/science/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.bvb.de/bvbonline.rss</xmlUrl>
+  <title>Borussia Dortmund online</title>
+  <description>Borussia Dortmund online</description>
+  <imageUrl></imageUrl>
+  <nick>BvB online</nick>
+  <webUrl>http://www.bvb.de</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.faz.net/s/Rub7F4BEE0E0C39429A8565089709B70C44/Tpl~Epartner~SRss_.xml</xmlUrl>
+  <title>Wissen - FAZ.NET</title>
+  <description>Wissen - FAZ.NET</description>
+  <imageUrl></imageUrl>
+  <nick>Wissen - FAZ.NET</nick>
+  <webUrl>http://www.faz.net</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.faz.net/s/RubA24ECD630CAE40E483841DB7D16F4211/Tpl~Epartner~SRss_.xml</xmlUrl>
+  <title>Politik - FAZ.NET</title>
+  <description>Politik - FAZ.NET</description>
+  <imageUrl></imageUrl>
+  <nick>Politik - FAZ.NET</nick>
+  <webUrl>http://www.faz.net</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.nzz.ch/?rss=true</xmlUrl>
+  <title>NZZ Online: Startseite</title>
+  <description>NZZ Online: Startseite</description>
+  <imageUrl></imageUrl>
+  <nick>NZZ Online: Startseite</nick>
+  <webUrl>http://www.nzz.ch/nachrichten/startseite</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.nzz.ch/nachrichten/sport?rss=true</xmlUrl>
+  <title>NZZ Online: Sport, Aktuell</title>
+  <description>NZZ Online: Sport, Aktuell</description>
+  <imageUrl></imageUrl>
+  <nick>NZZ Online: Sport, Aktuell</nick>
+  <webUrl>http://www.nzz.ch/nachrichten/sport/aktuell</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.nzz.ch/nachrichten/wissenschaft?rss=true</xmlUrl>
+  <title>NZZ Online: Wissenschaft</title>
+  <description>NZZ Online: Wissenschaft</description>
+  <imageUrl></imageUrl>
+  <nick>NZZ Online: Wissenschaft</nick>
+  <webUrl>http://www.nzz.ch/nachrichten/wissenschaft</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.ruhrnachrichten.de/storage/rss/rss/rn_bvb_exklusiv.xml</xmlUrl>
+  <title>RuhrNachrichten.de: BVB</title>
+  <description>RuhrNachrichten.de: BVB</description>
+  <imageUrl></imageUrl>
+  <nick>RuhrNachrichten.de: BVB</nick>
+  <webUrl>http://www.ruhrnachrichten.de/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.spiegel.de/netzwelt/web/index.rss</xmlUrl>
+  <title>SPIEGEL ONLINE - Netzwelt</title>
+  <description>SPIEGEL ONLINE - Netzwelt</description>
+  <imageUrl></imageUrl>
+  <nick>SPIEGEL ONLINE - Netzwelt</nick>
+  <webUrl>http://www.spiegel.de</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.spiegel.de/sport/ussports/index.rss</xmlUrl>
+  <title>SPIEGEL ONLINE - Sport</title>
+  <description>SPIEGEL ONLINE - Sport</description>
+  <imageUrl></imageUrl>
+  <nick>SPIEGEL ONLINE - Sport</nick>
+  <webUrl>http://www.spiegel.de</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.spiegel.de/wissenschaft/index.rss</xmlUrl>
+  <title>SPIEGEL ONLINE - Wissenschaft</title>
+  <description>SPIEGEL ONLINE - Wissenschaft</description>
+  <imageUrl></imageUrl>
+  <nick>SPIEGEL ONLINE - Wissenschaft</nick>
+  <webUrl>http://www.spiegel.de</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.stcatharinesstandard.ca/rss/</xmlUrl>
+  <title>St. Catharines Standard</title>
+  <description>St. Catharines Standard</description>
+  <imageUrl></imageUrl>
+  <nick>St. Catharines Standard</nick>
+  <webUrl>http://www.stcatharinesstandard.ca</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.sueddeutsche.de/app/service/rss/ressort/politik/rss.xml</xmlUrl>
+  <title>Politik-Artikel / sueddeutsche.de</title>
+  <description>Politik-Artikel / sueddeutsche.de</description>
+  <imageUrl></imageUrl>
+  <nick>Politik-Artikel / sueddeutsche.de</nick>
+  <webUrl>http://www.sueddeutsche.de/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.sueddeutsche.de/app/service/rss/ressort/sport/rss.xml</xmlUrl>
+  <title>Sport-Artikel / sueddeutsche.de</title>
+  <description>Sport-Artikel / sueddeutsche.de</description>
+  <imageUrl></imageUrl>
+  <nick>Sport-Artikel / sueddeutsche.de</nick>
+  <webUrl>http://www.sueddeutsche.de/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.sueddeutsche.de/app/service/rss/topthemen/topthemen3.xml</xmlUrl>
+  <title>Topthemen / sueddeutsche.de</title>
+  <description>Topthemen / sueddeutsche.de</description>
+  <imageUrl></imageUrl>
+  <nick>Topthemen / sueddeutsche.de</nick>
+  <webUrl>http://www.sueddeutsche.de/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.theglobeandmail.com/news/national/?service=rss</xmlUrl>
+  <title>The Globe and Mail - National RSS feed</title>
+  <description>The Globe and Mail - National RSS feed</description>
+  <imageUrl></imageUrl>
+  <nick>The Globe and Mail - National RSS feed</nick>
+  <webUrl>http://www.theglobeandmail.com/news/national/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.theglobeandmail.com/news/national/ontario/?service=rss</xmlUrl>
+  <title>The Globe and Mail - Ontario RSS feed</title>
+  <description>The Globe and Mail - Ontario RSS feed</description>
+  <imageUrl></imageUrl>
+  <nick>The Globe and Mail - Ontario RSS feed</nick>
+  <webUrl>http://www.theglobeandmail.com/news/national/ontario/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.thestar.com/rss/97467?</xmlUrl>
+  <title>Canada Top Stories</title>
+  <description>Canada Top Stories</description>
+  <imageUrl></imageUrl>
+  <nick>Canada Top Stories</nick>
+  <webUrl>http://www.thestar.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.thestar.com/rss?categories=311</xmlUrl>
+  <title>thestar.com - Ontario</title>
+  <description>thestar.com - Ontario</description>
+  <imageUrl></imageUrl>
+  <nick>thestar.com - Ontario</nick>
+  <webUrl>http://www.thestar.com</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.washingtonpost.com/wp-dyn/rss/linkset/2005/03/24/LI2005032400143.xml</xmlUrl>
+  <title>washingtonpost.com - Intelligence</title>
+  <description>washingtonpost.com - Intelligence</description>
+  <imageUrl></imageUrl>
+  <nick>washingtonpost.com - Intelligence</nick>
+  <webUrl>http://www.washingtonpost.com?nav=rss_nation/special</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.welt.de/satire/?service=Rss</xmlUrl>
+  <title>WELT ONLINE - Satire</title>
+  <description>WELT ONLINE - Satire</description>
+  <imageUrl></imageUrl>
+  <nick>WELT ONLINE - Satire</nick>
+  <webUrl>http://www.welt.de/satire/</webUrl>
+ </feed>
+ <feed hash="" >
+  <language></language>
+  <xmlUrl>http://www.welt.de/wissenschaft/?service=Rss</xmlUrl>
+  <title>WELT ONLINE - Wissenschaft</title>
+  <description>WELT ONLINE - Wissenschaft</description>
+  <imageUrl></imageUrl>
+  <nick>WELT ONLINE - Wissenschaft</nick>
+  <webUrl>http://www.welt.de/wissenschaft/</webUrl>
+ </feed>
+</drssfeedlist>

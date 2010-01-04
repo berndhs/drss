@@ -1,0 +1,27 @@
+
+Building from Source Code
+=========================
+
+This program requires the Qt4 toolset. If you don't have Qt, you can 
+get it from 
+
+     http://qt.nokia.com
+     
+Qt4 is available for many platforms.
+
+Building
+--------
+
+There should be a file named "build.sh". This is a shell script that tries
+to guess if you have the right version of Qt, and if so build the drss program.
+
+Execute build.sh with the command:
+
+$ sh build.sh
+
+
+It will try to compile things for you.
+At the end it will tell you whether this worked or not.
+If it worked, you will have an executable file
+called "drss". Copy (or move) this file where you
+keep your executables.
