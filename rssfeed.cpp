@@ -151,6 +151,17 @@ RssFeed::AddStoryHash (const RssItem* pStory, QString hash,
   return;
 }
 
+
+void
+RssFeed::MarkAllRead (const bool readit)
+{
+  StoryHashListType::iterator it;
+  for (it=storyHashList.begin(); it != storyHashList.end(); it++) {
+    it->second.haveread = readit;
+  }
+}
+
+
 void
 RssFeed::MarkAsRead (const QString storyhash, const bool readit)
 {

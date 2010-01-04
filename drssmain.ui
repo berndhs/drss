@@ -453,8 +453,6 @@ story</string>
     <property name="title">
      <string>&amp;Edit</string>
     </property>
-    <addaction name="editFeed"/>
-    <addaction name="editNewFeed"/>
     <addaction name="editNewFolder"/>
     <addaction name="editPrefs"/>
    </widget>
@@ -466,16 +464,28 @@ story</string>
     <addaction name="actionUser_Manual"/>
     <addaction name="actionLicense"/>
    </widget>
-   <widget class="QMenu" name="menuExit">
+   <widget class="QMenu" name="menuFeed">
     <property name="title">
-     <string>E&amp;xit</string>
+     <string>Feed</string>
     </property>
-    <addaction name="actionExit1"/>
+    <addaction name="editNewFeed"/>
+    <addaction name="editFeed"/>
+    <addaction name="actionFeedRead"/>
+   </widget>
+   <widget class="QMenu" name="menuStory">
+    <property name="title">
+     <string>Story</string>
+    </property>
+    <addaction name="actionNext"/>
+    <addaction name="actionPrevious"/>
+    <addaction name="actionStoryRead"/>
+    <addaction name="actionMail"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Edit"/>
+   <addaction name="menuFeed"/>
+   <addaction name="menuStory"/>
    <addaction name="menuAbout"/>
-   <addaction name="menuExit"/>
   </widget>
   <action name="importDRSS">
    <property name="text">
@@ -550,6 +560,31 @@ story</string>
   <action name="actionLicense">
    <property name="text">
     <string>&amp;License</string>
+   </property>
+  </action>
+  <action name="actionFeedRead">
+   <property name="text">
+    <string>Mark Read</string>
+   </property>
+  </action>
+  <action name="actionStoryRead">
+   <property name="text">
+    <string>Mark Read</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionPrevious">
+   <property name="text">
+    <string>Before</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
    </property>
   </action>
  </widget>

@@ -86,6 +86,8 @@ Docu::ConnectButtons ()
               this, SLOT ( DoNewFeed ()));
   connect (nb.editNewFolder, SIGNAL(triggered()),
               this, SLOT ( DoNewFolder ()));
+  connect (nb.actionFeedRead, SIGNAL (triggered()),
+              this, SLOT ( DoMarkFeedRead ()));
   connect (nb.nextStoryButton, SIGNAL(clicked()), 
               this, SLOT ( DoNextStory ()));
   connect (nb.backStoryButton, SIGNAL(clicked()), 
@@ -100,6 +102,12 @@ Docu::ConnectButtons ()
               this, SLOT ( SaveFeedsAs ()));
   connect (nb.editPrefs, SIGNAL (triggered()),
               this, SLOT ( DoEditPrefs ()));
+  connect (nb.actionNext, SIGNAL (triggered()),
+              this, SLOT (DoNextStory ()));
+  connect (nb.actionPrevious, SIGNAL (triggered()),
+              this, SLOT (DoPrevStory ()));
+  connect (nb.actionMail, SIGNAL (triggered()),
+              this, SLOT ( MailStory ()));
   connect (nb.feedTree,SIGNAL(doubleClicked(const QModelIndex &)),
               this, SLOT ( ClickedFeed (const QModelIndex &)));
   connect (nb.feedTree,SIGNAL(pressed(const QModelIndex &)),
@@ -484,6 +492,13 @@ Docu::IsInteresting (const QModelIndex & index)
     }
   }
 }
+
+void
+Docu::DoMarkFeedRead ()
+{
+  feedList.MarkReadDeep (interestingFeed);
+}
+
 void
 Docu::DoNewsLink ()
 {

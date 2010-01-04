@@ -41,6 +41,7 @@ public:
    void MarkAsRead (const QString storyhash, const bool readit);
    void MarkAsLive (const QString storyhash, const bool islive);
    bool WasRead    (const QString storyhash);
+   void MarkAllRead (const bool readit = true);
    
    #if DRSS_DEBUG
    void DumpHashList();

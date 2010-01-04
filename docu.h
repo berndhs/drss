@@ -58,6 +58,7 @@ public slots:
   void DoEditFeed();
   void DoNewFeed();
   void DoNewFolder();
+  void DoMarkFeedRead ();
   void ShowVersion();
   void ShowHelp ();
   void ShowLicense ();

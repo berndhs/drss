@@ -306,6 +306,34 @@ FeedList::SlowCheckChanged (QStandardItem * pItem)
   RecurseCheckChanged (pItem, true);
 }
 
+void
+FeedList::MarkReadDeep (QStandardItem * pRootItem)
+{
+  QStandardItem * pItem(0);
+  RssFeed       * pData(0);
+  if (pRootItem == 0) {
+    return;
+  }
+  pData = RssFeed::Reinterpret (pRootItem->data());
+  if (pData) {
+    if (!pData->Dir()) {
+      pData->MarkAllRead();
+    }
+  }
+  int nrows = pRootItem->rowCount();
+  for (int row=0; row < nrows; row++) {
+    pItem = pRootItem->child (row);
+    pData = RssFeed::Reinterpret (pItem->data());
+    if (pData) {
+      if (pData->Dir()) {
+        MarkReadDeep (pItem);
+      } else {
+        pData->MarkAllRead ();
+      }
+    }
+  }
+}
+
 bool
 FeedList::RecurseCheckChanged (QStandardItem * pParent, bool doEmit, bool clear)
 {

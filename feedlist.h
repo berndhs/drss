@@ -45,6 +45,7 @@ public:
   bool RecurseCheckChanged (QStandardItem *pParent, 
                             bool doEmit = false, 
                             bool clear = false);
+  void MarkReadDeep (QStandardItem * pRootItem);
   
   void Insert (RssFeed *f, QStandardItem * pItem = 0);
   void InsertNewDir (RssFeed *f);
