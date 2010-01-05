@@ -62,10 +62,11 @@ void AddSoloOption (const QString longName,
   * parameter was changed
   */
   
-bool SeenOpt (const QString name);
 bool SetStringOpt (const QString longName, QString & opt);
 bool SetIntOpt    (const QString longName, int & opt);
 bool SetSoloOpt   (const QString longName, bool & seenIt);
+
+bool SeenOpt (const QString name);
 
 private:
 

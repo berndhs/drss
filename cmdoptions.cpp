@@ -222,6 +222,7 @@ CmdOptions::SetIntOpt (const QString longName, int & opt)
   bool seenOpt = SeenOpt(longName);
   if (seenOpt) {
     opt = mOptValues[longName]->theValue.toInt();
+    return true;
   }
   return false;
 }
