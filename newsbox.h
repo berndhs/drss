@@ -31,7 +31,7 @@ public:
 
    NewsBox ();
    
-   void SetTitle (QString t, QString auth = "");
+   void SetTitle (QString t, QString auth, QString date);
    void SetDescr (QString d);
    void SetNick  (QString n);
    void SetTreeModel (QAbstractItemModel *pm);

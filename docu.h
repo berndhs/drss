@@ -121,6 +121,7 @@ private:
   void DitchFeed ();
   void MakeStoryModel ();
   void ClearStoryModel ();
+  void RescanStoryModel ();
   void AskChangedDeep (QStandardItem * pItem);
   StoryList::iterator FindStory (RssItem *st);
   

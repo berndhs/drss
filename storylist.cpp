@@ -144,6 +144,7 @@ StoryList::ParseRssStory (QDomElement & elem)
   static QString tag_link("link");
   static QString tag_creator("dc:creator");
   static QString tag_guid("guid");
+  static QString tag_date ("pubDate");
   QDomElement e = elem.firstChildElement();
   RssItem * pI(0);
   while (!e.isNull()) {
@@ -173,6 +174,11 @@ StoryList::ParseRssStory (QDomElement & elem)
         pI = new RssItem;
       }
       pI->SetGuid (e.text());
+    } else if (t == tag_date) {
+      if (pI == 0) {
+        pI = new RssItem;
+      }
+      pI->SetDate (e.text());
     }
     e = e.nextSiblingElement();
   }
@@ -202,6 +208,7 @@ StoryList::ParseAtomStory (QDomElement & elem)
   static QString tag_descr("content");
   static QString tag_link("link");
   static QString tag_author("author");
+  static QString tag_date ("published");
   static QString tag_id ("id");
   
   QDomElement e = elem.firstChildElement();
@@ -237,6 +244,11 @@ StoryList::ParseAtomStory (QDomElement & elem)
         pI = new RssItem;
       }
       pI->SetGuid (e.text());
+    } else if (t == tag_date) {
+      if (pI == 0) {
+        pI = new RssItem;
+      }
+      pI->SetDate (e.text());
     }
     e = e.nextSiblingElement();
   }

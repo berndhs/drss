@@ -96,13 +96,16 @@ NewsBox::ShowBusy ()
 }
 
 void
-NewsBox::SetTitle (QString t, QString auth)
+NewsBox::SetTitle (QString t, QString auth, QString date)
 {
   QString title_with_author;
   if (auth == "") {
      title_with_author = t;
   } else {
      title_with_author = t + tr(", by ") + auth;
+  }
+  if (date.length() > 0) {
+    title_with_author += tr(" , ") + date;
   }
   storyTitle->setHtml(title_with_author);
 }
@@ -138,7 +141,7 @@ void
 NewsBox::Clear ()
 {
   SetDescr ("");
-  SetTitle ("");
+  SetTitle ("","","");
   SetNick ("");
 }
 

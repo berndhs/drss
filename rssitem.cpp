@@ -31,6 +31,7 @@ RssItem::ComputeHash ()
   tmpHash.addData (mAuthor.toUtf8());
   tmpHash.addData (mDescr.toUtf8());
   tmpHash.addData (mGuid.toUtf8());
+  tmpHash.addData (mDate.toUtf8());
   QByteArray result = tmpHash.result();
   mHash = result.toHex();
 }

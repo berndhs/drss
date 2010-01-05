@@ -302,13 +302,17 @@ Docu::MailStory ()
     QString subject = tr("Re:") + curStory->Title();
     QString body;
     QString intro;
-    intro = tr("on ") + curFeed->Title() + "\r\n"
-                  + tr("story") +  "<a href=\"" 
+    intro = tr("about: ") + curFeed->Title() + "\r\n"
+                  + tr(" story ") +  "<a href=\"" 
                   + curStory->Link() + "\">"
                   + curStory->Title() + "</a>\r\n";
     QString auth = curStory->Author();
     if (auth.length() > 0) {
-      intro.append(tr(" by ") + auth + "\r\n");
+      intro.append(tr(" by: ") + auth + "\r\n");
+    }
+    QString date = curStory->Date();
+    if (date.length() > 0) {
+      intro.append (tr(" on: ") + date + "\r\n");
     }
     body = intro + curStory->Descr();
     QString url = "mailto:?subject=" + subject
@@ -497,6 +501,7 @@ void
 Docu::DoMarkFeedRead ()
 {
   feedList.MarkReadDeep (interestingFeed);
+  RescanStoryModel ();
 }
 
 void
@@ -504,6 +509,24 @@ Docu::DoNewsLink ()
 {
   if (curStory) {
     QDesktopServices::openUrl (QUrl(curStory->Link()));
+  }
+}
+
+void
+Docu::RescanStoryModel ()
+{
+  int row (0);
+  bool wasRead (false);
+  RssItem *pStory (0);
+  StoryList::iterator stit;
+  for (stit = storyList.begin(), row=0; stit != storyList.end(); stit++, row++) {
+    pStory = *stit;
+    if (pStory) {
+      if (curFeed) {
+        wasRead = curFeed->WasRead (pStory->Hash());
+        nb.MarkStoryBold (row,!wasRead);
+      }
+    }
   }
 }
 
@@ -595,7 +618,7 @@ Docu::DoStory ()
     
     if (pStory) {
       int r = pStory->Row();
-      nb.SetTitle (pStory->Title(),pStory->Author());
+      nb.SetTitle (pStory->Title(),pStory->Author(), pStory->Date());
       nb.SetDescr (pStory->Descr());
       pStory->SetIsRead(true);
       nb.storyView->setCurrentRow(r);
@@ -618,7 +641,7 @@ Docu::DoThisStory (QListWidgetItem * item)
   RssItem * pStory = storyList.Item(row);
   if (pStory) {
     curStory = pStory;
-    nb.SetTitle (pStory->Title());
+    nb.SetTitle (pStory->Title(), pStory->Author(), pStory->Date());
     nb.SetDescr (pStory->Descr());
     storyIt = FindStory(pStory);
     pStory->SetIsRead (true);

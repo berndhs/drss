@@ -31,6 +31,7 @@ public:
     QString Link ()  { return mLink; }
     QString Author (){ return mAuthor; }
     QString Guid ()  { return mGuid; }
+    QString Date ()  { return mDate; }
     QString Hash ()  { return mHash; }
     bool    IsNew () { return isNew; }
     bool    IsRead (){ return haveRead; }
@@ -43,6 +44,7 @@ public:
     void SetLink (QString l) { mLink = l; }
     void SetAuthor (QString a) { mAuthor = a; }
     void SetGuid  (QString g) { mGuid = g; }
+    void SetDate (QString d)  { mDate = d; }
     void SetRow (int r)      { row = r; }
     void SetIsNew (bool n)   { isNew = n; }
     void SetIsRead (bool r)  { haveRead = r; }
@@ -55,6 +57,7 @@ private:
   QString   mAuthor;
   QString   mHash;
   QString   mGuid;
+  QString   mDate;
   bool      isNew;
   bool      haveRead;
   int       row;

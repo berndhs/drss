@@ -327,6 +327,9 @@ story</string>
             <pointsize>8</pointsize>
            </font>
           </property>
+          <property name="toolTip">
+           <string>email this story</string>
+          </property>
           <property name="text">
            <string>Mail</string>
           </property>
@@ -466,7 +469,7 @@ story</string>
    </widget>
    <widget class="QMenu" name="menuFeed">
     <property name="title">
-     <string>Feed</string>
+     <string>Fee&amp;d</string>
     </property>
     <addaction name="editNewFeed"/>
     <addaction name="editFeed"/>
@@ -474,11 +477,10 @@ story</string>
    </widget>
    <widget class="QMenu" name="menuStory">
     <property name="title">
-     <string>Story</string>
+     <string>S&amp;tory</string>
     </property>
     <addaction name="actionNext"/>
     <addaction name="actionPrevious"/>
-    <addaction name="actionStoryRead"/>
     <addaction name="actionMail"/>
    </widget>
    <addaction name="menu_File"/>
@@ -564,7 +566,7 @@ story</string>
   </action>
   <action name="actionFeedRead">
    <property name="text">
-    <string>Mark Read</string>
+    <string>&amp;Mark Read</string>
    </property>
   </action>
   <action name="actionStoryRead">
@@ -574,17 +576,17 @@ story</string>
   </action>
   <action name="actionNext">
    <property name="text">
-    <string>Next</string>
+    <string>&amp;Next</string>
    </property>
   </action>
   <action name="actionPrevious">
    <property name="text">
-    <string>Before</string>
+    <string>&amp;Before</string>
    </property>
   </action>
   <action name="actionMail">
    <property name="text">
-    <string>Mail</string>
+    <string>&amp;Mail</string>
    </property>
   </action>
  </widget>
