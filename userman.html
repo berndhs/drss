@@ -387,8 +387,8 @@ div#toc a:visited { color: blue; }
 <h1>DRSS Manual</h1>
 <span id="author">Bernd Stramm</span><br />
 <span id="email"><tt>&lt;<a href="mailto:bernd.stramm@gmail.com">bernd.stramm@gmail.com</a>&gt;</tt></span><br />
-<span id="revnumber">version 0.2.1,</span>
-<span id="revdate">December 2009</span>
+<span id="revnumber">version 0.3,</span>
+<span id="revdate">January 2010</span>
 </div>
 <div id="preamble">
 <div class="sectionbody">
@@ -401,19 +401,20 @@ pulled in on demand, rather than being pushed in by the sender. Using RSS news f
 the user can subscribe and unsibscribe much more easily compared to mailing lists.</p></div>
 </div>
 </div>
-<h2 id="Feeds">1. Feeds and Folders</h2>
+<h2 id="Feeds">Feeds and Folders</h2>
 <div class="sectionbody">
-<div class="paragraph"><div class="title">Opening a Feed</div><p>To open a feed, <strong>double click</strong> on the feed title in the feed list window.</p></div>
+<div class="paragraph"><div class="title">Opening a Feed</div><p>To open a feed and view stories, <strong>double click</strong> on the feed title in the feed list window.</p></div>
 <div class="paragraph"><div class="title">Editing a Feed</div><p>To edit a feed, you can</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-<strong>Right click</strong> on the feed title in the feed list window
+<strong>Right click</strong> on the feed title in the feed list window, and select <strong>Edit</strong> from
+the popup menu,
 </p>
 </li>
 <li>
 <p>
-Select <strong>Edit&#8594;Edit</strong> Feed from the menu bar to edit the current feed.
+Select <strong>Feed&#8594;Edit</strong>  from the menu bar to edit the current feed.
 </p>
 </li>
 </ul></div>
@@ -422,7 +423,7 @@ You can change all of it.</p></div>
 <div class="paragraph"><p>Be aware that changing the link URLs may cause the feed to stop working, or it
 may cause a different feed to be connected.</p></div>
 <div class="paragraph"><div class="title">Editing a Folder</div><p>Folders are edited in the same way as feeds.</p></div>
-<div class="paragraph"><div class="title">New Feeds</div><p>To connect to a new feed, select <strong>Edit&#8594;New Feed</strong> from the menu bar.
+<div class="paragraph"><div class="title">New Feeds</div><p>To connect to a new feed, select <strong>Feed&#8594;New Feed</strong> from the menu bar.
 This will bring up a window asking you for the feed link. Often you will
 have the feed link from a website. Type of paste the link URL, press Return
 or click the <strong>OK</strong> button. Click on <strong>Cancel</strong> if you don&#8217;t want a new feed.</p></div>
@@ -430,7 +431,7 @@ or click the <strong>OK</strong> button. Click on <strong>Cancel</strong> if you
 to show you what it has found. If the feed was not found it will tell you. If the
 feed was found but could not be decoded, it will tell you.</p></div>
 <div class="paragraph"><p>New feeds are always created at the top level. If you want the feed to
-be in a folder, you move it there after creating it.</p></div>
+be inside a folder, you move it there after creating it.</p></div>
 <div class="paragraph"><div class="title">New Folders</div><p>You can add new folders by selecting <strong>Edit&#8594;New Folder</strong>, and entering a
 folder name when prompted. Note that folder names do not have to be unique.</p></div>
 <div class="paragraph"><p>New folders are always created at the top level. If you want the folder
@@ -449,7 +450,7 @@ to be in another folder, you move it there after creating it.</p></div>
 </td>
 </tr></table>
 </div>
-<h3 id="_importing_feed_lists">1.1. Importing Feed Lists</h3><div style="clear:left"></div>
+<h3 id="_importing_feed_lists">Importing Feed Lists</h3><div style="clear:left"></div>
 <div class="paragraph"><p>You can import feed lists from in <em>OPML</em> format, or in <em>DRSS</em> format.
 <em>OPML</em> format is used by some other news readers, so this can be useful
 if you have an old list.</p></div>
@@ -459,7 +460,7 @@ structure is not preserved.</p></div>
 <em>not</em> merged. This means that you can get duplicates in your feed list
 when importing.</p></div>
 </div>
-<h2 id="Stories">2. Stories</h2>
+<h2 id="Stories">Stories</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>After opening a feed, a list of available news stories is displayer in the
 story list window. Each story is what RSS calls an <em>item</em>, and Atom calls
@@ -472,17 +473,25 @@ To read a story, click on the title in the story list.
 </li>
 <li>
 <p>
-To read the next story, click on the <strong>next story</strong> button.
+To read the next story, click on the <strong>next story</strong> button, or select <strong>Story&#8594;Next</strong> from
+the menu bar.
 </p>
 </li>
 <li>
 <p>
-To read the previous story, click on the <strong>back</strong> button.
+To read the previous story, click on the <strong>back</strong> button, or select <strong>Story&#8594;Back</strong> from
+the meny bar.
+</p>
+</li>
+<li>
+<p>
+To view the web page of the current story, click the <strong>visit story</strong> button. Some feeds
+provide links to a web page with more details of the story.
 </p>
 </li>
 </ul></div>
 </div>
-<h2 id="_buttons">3. Buttons</h2>
+<h2 id="_buttons">Buttons</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>There are four buttons on the main window.</p></div>
 <div class="dlist"><dl>
@@ -497,7 +506,7 @@ Click on the <strong>visit story</strong> button to
 go to the current story on the website, using your browser. Typically an
 RSS feed provides only a summary
 of the story, and a link to the full story on a website.
-This button follows that link.
+This button hands that link to the default browser in your system.
 </p>
 </dd>
 <dt class="hdlist1">
@@ -534,6 +543,20 @@ Exit the DRSS program.
 </dd>
 <dt class="hdlist1">
 <span class="image">
+<img src="mailbutton.jpg" alt="mailbutton.jpg" />
+</span>
+</dt>
+<dd>
+<p>
+Email the current story. DRSS takes parts of the current story,
+and composes an email message with subject. Then your email program is called for you to
+finish the message. Whether this works depends on your system settings. Especially it
+depends on whether you have a default email program configured, and whether that
+email program is any good.
+</p>
+</dd>
+<dt class="hdlist1">
+<span class="image">
 <img src="clock.jpg" alt="clock.jpg" />
 </span>
 </dt>
@@ -545,7 +568,7 @@ can see how much time you are wasting reading news.
 </dd>
 </dl></div>
 </div>
-<h2 id="_prerequisits">4. Prerequisits</h2>
+<h2 id="_prerequisits">Prerequisits</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>To build and run DRSS, the current version uses:</p></div>
 <div class="olist arabic"><ol class="arabic">
@@ -588,7 +611,7 @@ Xml
 </li>
 <li>
 <p>
-WebKist
+WebKit
 </p>
 </li>
 </ol></div>
@@ -599,11 +622,11 @@ Boost Program Options
 </p>
 </li>
 </ol></div>
-<h3 id="_how_to_build">4.1. How to Build</h3><div style="clear:left"></div>
+<h3 id="_how_to_build">How to Build</h3><div style="clear:left"></div>
 <div class="paragraph"><p>It&#8217;s pretty straightforward. Please read the INSTALL file that comes with
 the source code.</p></div>
 </div>
-<h2 id="_license_and_warranty">5. License and Warranty</h2>
+<h2 id="_license_and_warranty">License and Warranty</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>This is free open source software, hence the usual licensing. And the
 usual warranty, or lack thereof:</p></div>
@@ -627,8 +650,8 @@ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.2.1<br />
-Last updated 2009-12-27 10:30:13 EDT
+Version 0.3<br />
+Last updated 2010-01-05 13:44:23 EDT
 </div>
 </div>
 </body>

@@ -19,6 +19,7 @@
 #include <QAbstractItemModel>
 #include <QModelIndex>
 #include <QTimer>
+#include <QMenu>
 
 #include <deque>
 #include "newsbox.h"
@@ -75,6 +76,7 @@ public slots:
   void Update ();
   void ClearPeriodic ();
   void AskChanged (RssFeed * feed);
+  void CheckNewNews (const QStandardItem * sitem = 0);
    
    
 private:
@@ -106,6 +108,11 @@ private:
   QStandardItem         * newFeed;
   EditFeed     editor;
   
+  QMenu        feedDetailMenu;
+  QAction    * callEditFeed;
+  QAction    * callMarkRead;
+  QAction    * callProbeNew; 
+  
   NewsBox   nb;
   bool      nbopen;
   
@@ -122,7 +129,10 @@ private:
   void MakeStoryModel ();
   void ClearStoryModel ();
   void RescanStoryModel ();
-  void AskChangedDeep (QStandardItem * pItem);
+  void AskChangedDeep (const QStandardItem * pItem);
+  void SetupSubmenu ();
+  void DoFeedDetailMenu ();
+  
   StoryList::iterator FindStory (RssItem *st);
   
 };

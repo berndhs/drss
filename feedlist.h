@@ -41,8 +41,8 @@ public:
   void clear();
   
   void CheckChanged (bool clear=false);
-  void SlowCheckChanged (QStandardItem * pItem);
-  bool RecurseCheckChanged (QStandardItem *pParent, 
+  void SlowCheckChanged (const QStandardItem * pItem);
+  bool RecurseCheckChanged (const QStandardItem *pParent, 
                             bool doEmit = false, 
                             bool clear = false);
   void MarkReadDeep (QStandardItem * pRootItem);

@@ -301,7 +301,7 @@ FeedList::CheckChanged (bool clear)
 
 
 void
-FeedList::SlowCheckChanged (QStandardItem * pItem)
+FeedList::SlowCheckChanged (const QStandardItem * pItem)
 {
   RecurseCheckChanged (pItem, true);
 }
@@ -335,7 +335,7 @@ FeedList::MarkReadDeep (QStandardItem * pRootItem)
 }
 
 bool
-FeedList::RecurseCheckChanged (QStandardItem * pParent, bool doEmit, bool clear)
+FeedList::RecurseCheckChanged (const QStandardItem * pParent, bool doEmit, bool clear)
 {
   QStandardItem * pItem(0);
   RssFeed * pData;

@@ -474,6 +474,7 @@ story</string>
     <addaction name="editNewFeed"/>
     <addaction name="editFeed"/>
     <addaction name="actionFeedRead"/>
+    <addaction name="actionCheckUpdates"/>
    </widget>
    <widget class="QMenu" name="menuStory">
     <property name="title">
@@ -587,6 +588,11 @@ story</string>
   <action name="actionMail">
    <property name="text">
     <string>&amp;Mail</string>
+   </property>
+  </action>
+  <action name="actionCheckUpdates">
+   <property name="text">
+    <string>Check for Updates</string>
    </property>
   </action>
  </widget>

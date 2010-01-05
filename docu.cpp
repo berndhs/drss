@@ -68,6 +68,15 @@ Docu::Docu (QApplication *papp, DRSSConfig & conf)
   saveT.start (5*60*1000); // 5 minutes
   
   nb.Reconfigure (config);
+  SetupSubmenu ();
+}
+
+void
+Docu::SetupSubmenu ()
+{
+  callProbeNew = feedDetailMenu.addAction (tr("Check for Updates"));
+  callMarkRead = feedDetailMenu.addAction (tr("Mark as Read"));
+  callEditFeed = feedDetailMenu.addAction (tr("Edit"));
 }
 
 
@@ -100,6 +109,8 @@ Docu::ConnectButtons ()
               this, SLOT ( SaveFeeds ()));
   connect (nb.actionSaveAs, SIGNAL(triggered()),
               this, SLOT ( SaveFeedsAs ()));
+  connect (nb.actionCheckUpdates, SIGNAL (triggered()),
+              this, SLOT ( CheckNewNews ()));
   connect (nb.editPrefs, SIGNAL (triggered()),
               this, SLOT ( DoEditPrefs ()));
   connect (nb.actionNext, SIGNAL (triggered()),
@@ -211,7 +222,7 @@ Docu::OpenFeed (QStandardItem *pItem)
 }
 
 void
-Docu::AskChangedDeep (QStandardItem *pItem)
+Docu::AskChangedDeep (const QStandardItem *pItem)
 {
   feedList.SlowCheckChanged (pItem);
 }
@@ -363,8 +374,22 @@ Docu::CheckPressed (const QModelIndex & index)
 {
   Qt::MouseButtons buttons = QApplication::mouseButtons();
   if (buttons & Qt::RightButton) {
-    IsInteresting(index);
-    DoEditFeed();
+    IsInteresting (index);
+    DoFeedDetailMenu ();
+  }
+}
+
+void
+Docu::DoFeedDetailMenu ()
+{
+  QPoint pos = QCursor::pos();
+  QAction * userWants = feedDetailMenu.exec(pos);
+  if (userWants == callEditFeed) {
+    DoEditFeed ();
+  } else if (userWants == callMarkRead) {
+    DoMarkFeedRead ();
+  } else if (userWants == callProbeNew) {
+    CheckNewNews (interestingFeed);
   }
 }
 
@@ -483,18 +508,29 @@ Docu::ClickedFeed (const QModelIndex & index)
 }
 
 void
-Docu::IsInteresting (const QModelIndex & index)
+Docu::CheckNewNews (const QStandardItem * sitem)
 {
-  QStandardItem * sitem = feedList.itemFromIndex(index);
+  if (sitem == 0) {
+    sitem = interestingFeed;
+  }
+  if (sitem == 0) {
+    return;
+  }
   RssFeed * pRF = RssFeed::Reinterpret(sitem->data());
   if (pRF) {
-    interestingFeed = sitem;
     if (pRF->Dir()) {
       AskChangedDeep (sitem);
     } else {
       AskChanged(pRF);
     }
   }
+}
+
+void
+Docu::IsInteresting (const QModelIndex & index)
+{
+  QStandardItem * sitem = feedList.itemFromIndex(index); 
+  interestingFeed = sitem;
 }
 
 void

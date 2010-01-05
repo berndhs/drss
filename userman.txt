@@ -1,7 +1,7 @@
 DRSS Manual
 ===========
 Bernd Stramm <bernd.stramm@gmail.com>
-v0.2.1, December 2009
+v0.3, January 2010
 
 DRSS is a RSS news feed reader. It allows you to keep track of a number of news
 sources, such as online newspapers, websites and blogs, without having to visit
@@ -17,13 +17,14 @@ the user can subscribe and unsibscribe much more easily compared to mailing list
 == Feeds and Folders
 
 .Opening a Feed
-To open a feed, *double click* on the feed title in the feed list window.
+To open a feed and view stories, *double click* on the feed title in the feed list window.
 
 .Editing a Feed
 To edit a feed, you can
 
-* *Right click* on the feed title in the feed list window
-* Select *Edit->Edit* Feed from the menu bar to edit the current feed.
+* *Right click* on the feed title in the feed list window, and select *Edit* from
+the popup menu,
+* Select *Feed->Edit*  from the menu bar to edit the current feed.
 
 Either way, you get a new window with the current settings of feed information.
 You can change all of it.
@@ -35,7 +36,7 @@ may cause a different feed to be connected.
 Folders are edited in the same way as feeds.
 
 .New Feeds
-To connect to a new feed, select *Edit->New Feed* from the menu bar.
+To connect to a new feed, select *Feed->New Feed* from the menu bar.
 This will bring up a window asking you for the feed link. Often you will
 have the feed link from a website. Type of paste the link URL, press Return
 or click the *OK* button. Click on *Cancel* if you don't want a new feed.
@@ -45,7 +46,7 @@ to show you what it has found. If the feed was not found it will tell you. If th
 feed was found but could not be decoded, it will tell you.
 
 New feeds are always created at the top level. If you want the feed to
-be in a folder, you move it there after creating it.
+be inside a folder, you move it there after creating it.
 
 .New Folders
 You can add new folders by selecting *Edit->New Folder*, and entering a
@@ -89,9 +90,14 @@ an _entry_.
 
 * To read a story, click on the title in the story list.
 
-* To read the next story, click on the *next story* button.
+* To read the next story, click on the *next story* button, or select *Story->Next* from
+the menu bar.
 
-* To read the previous story, click on the *back* button.
+* To read the previous story, click on the *back* button, or select *Story->Back* from
+the meny bar.
+
+* To view the web page of the current story, click the *visit story* button. Some feeds
+provide links to a web page with more details of the story.
 
 == Buttons
 There are four buttons on the main window.
@@ -100,7 +106,7 @@ image:visitstorybutton.jpg[]:: Click on the *visit story* button to
 go to the current story on the website, using your browser. Typically an
 RSS feed provides only a summary
 of the story, and a link to the full story on a website. 
-This button follows that link.
+This button hands that link to the default browser in your system.
 
 image:backbutton.jpg[]:: Move back one story on the list of stories from the 
 current feed.
@@ -109,6 +115,12 @@ image:nextstorybutton.jpg[]::  Move forward one story on the list of stories fro
 current feed.
 
 image:exitbutton.jpg[]:: Exit the DRSS program. 
+
+image:mailbutton.jpg[]:: Email the current story. DRSS takes parts of the current story,
+and composes an email message with subject. Then your email program is called for you to
+finish the message. Whether this works depends on your system settings. Especially it
+depends on whether you have a default email program configured, and whether that
+email program is any good.
 
 image:clock.jpg[]::  The clock is not a button. It is provided so that you
 can see how much time you are wasting reading news.
@@ -125,7 +137,7 @@ To build and run DRSS, the current version uses:
 .. Gui
 .. Network
 .. Xml
-.. WebKist
+.. WebKit
 . Boost Program Options
 
 === How to Build
