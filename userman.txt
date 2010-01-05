@@ -138,7 +138,6 @@ To build and run DRSS, the current version uses:
 .. Network
 .. Xml
 .. WebKit
-. Boost Program Options
 
 === How to Build
 

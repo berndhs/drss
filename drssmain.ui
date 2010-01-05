@@ -592,7 +592,7 @@ story</string>
   </action>
   <action name="actionCheckUpdates">
    <property name="text">
-    <string>Check for Updates</string>
+    <string>Check for &amp;Updates</string>
    </property>
   </action>
  </widget>
