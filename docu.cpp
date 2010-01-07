@@ -125,7 +125,7 @@ Docu::ConnectButtons ()
               this, SLOT ( CheckPressed (const QModelIndex &)));
   connect (nb.feedTree, SIGNAL(clicked(const QModelIndex &)),
               this, SLOT ( IsInteresting (const QModelIndex &)));
-  connect (nb.storyView, SIGNAL(itemClicked(QListWidgetItem *)),
+  connect (nb.storyView, SIGNAL (itemActivated (QListWidgetItem *)),
               this, SLOT ( DoThisStory (QListWidgetItem *)));
   connect (nb.actionUser_Manual, SIGNAL (triggered()),
               this, SLOT ( ShowHelp ()));   
