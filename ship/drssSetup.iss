@@ -21,7 +21,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 LicenseFile=D:\bernd\sample_codes\drss\LICENSE.txt
-OutputBaseFilename=setupDrss
+OutputBaseFilename=setupDrssv0_3
 Compression=lzma
 SolidCompression=true
 
