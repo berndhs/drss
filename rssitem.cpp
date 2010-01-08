@@ -23,6 +23,10 @@ RssItem::~RssItem()
 {
 }
 
+/** Note that we do NOT include the Date() field in the hash,
+  * since we are interested in changed in content, not date.
+  */
+  
 void
 RssItem::ComputeHash ()
 {
@@ -30,8 +34,6 @@ RssItem::ComputeHash ()
   tmpHash.addData (mTitle.toUtf8());
   tmpHash.addData (mAuthor.toUtf8());
   tmpHash.addData (mDescr.toUtf8());
-  tmpHash.addData (mGuid.toUtf8());
-  tmpHash.addData (mDate.toUtf8());
   QByteArray result = tmpHash.result();
   mHash = result.toHex();
 }
