@@ -4,6 +4,6 @@ PROGRAM=drss
 
 DEST=$HOME/bin
 
-install --compare $PROGRAM $DEST
+install $PROGRAM $DEST
 
 ls -l $DEST/$PROGRAM
