@@ -14,14 +14,14 @@
 
 
 EXEC = drss
-MAKEFILE = Make_Q
+DRSS_MAKEFILE = Make_Q
 
 all:
 	sh build.sh
   
 clean:
-	if [ -e $(MAKEFILE) ]; then $(MAKE) -i -f $(MAKEFILE) clean; fi 
-	if [ -e $(MAKEFILE) ]; then $(RM) $(MAKEFILE)* ; fi 
+	if [ -e $(DRSS_MAKEFILE) ]; then $(MAKE) -i -f $(DRSS_MAKEFILE) clean; fi 
+	if [ -e $(DRSS_MAKEFILE) ]; then $(RM) $(DRSS_MAKEFILE)* ; fi 
 	$(RM) $(EXEC)
   
 install:
