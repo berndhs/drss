@@ -77,6 +77,7 @@ public slots:
   void ClearPeriodic ();
   void AskChanged (RssFeed * feed);
   void CheckNewNews (const QStandardItem * sitem = 0);
+  void NewSize (const QSize newsz);
    
    
 private:

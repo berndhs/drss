@@ -48,6 +48,7 @@ public:
    
    void ShowBusy ();
    void SetBusy (int b) { busy = b; }
+   void resizeEvent ( QResizeEvent * event ) ;
    
 public slots:
 
@@ -57,6 +58,7 @@ public slots:
 signals:
 
   void ImDone();
+  void SigSizeChange (const QSize sz);
    
 private:
 

@@ -1,16 +1,16 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-  <file>drsslogo.png</file>
-  <file>loading.png</file>
-  <file>notloading.png</file>
-  <file>LICENSE.txt</file>
-  <file>helpman.html</file>
-  <file>backbutton.jpg</file>
-  <file>visitstorybutton.jpg</file>
-  <file>exitbutton.jpg</file>
-  <file>nextstorybutton.jpg</file>
-  <file>mailbutton.jpg</file>
-  <file>clock.jpg</file>
+  <file alias="drsslogo.png">img/drsslogo.png</file>
+  <file alias="loading.png">img/loading.png</file>
+  <file alias="notloading.png">img/notloading.png</file>
+  <file alias="LICENSE.txt">LICENSE.txt</file>
+  <file alias="helpman.html">helpman.html</file>
+  <file alias="backbutton.jpg">img/backbutton.jpg</file>
+  <file alias="visitstorybutton.jpg">img/visitstorybutton.jpg</file>
+  <file alias="exitbutton.jpg">img/exitbutton.jpg</file>
+  <file alias="nextstorybutton.jpg">img/nextstorybutton.jpg</file>
+  <file alias="mailbutton.jpg">img/mailbutton.jpg</file>
+  <file alias="clock.jpg">img/clock.jpg</file>
 </qresource>
 </RCC>
 

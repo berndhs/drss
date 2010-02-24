@@ -13,6 +13,7 @@
 
 #include <QString>
 #include <QDomElement>
+#include <QSize>
 
 
 namespace deliberate {
@@ -37,6 +38,7 @@ public:
    bool    Changed () { return changed; }
    bool    SaveOnExit () { return saveonexit; }
    int     StoryTextSize () { return storytextsize; }
+   QSize   Size () { return windowsize; }
    
  
    void SetFeedListFile (QString f) { feedListFile = f;}
@@ -45,12 +47,14 @@ public:
    void SetChanged (const bool c)    { changed = c; }
    void SetSaveOnExit (const bool soe) { saveonexit = soe; }
    void SetStoryTextSize (const int sz) { storytextsize = sz; }
+   void SetSize (const QSize sz) { windowsize = sz; }
    
    static int maxTextFactor;
    static int minTextFactor;
 
 
 private:
+
 
    QString feedListFile;
    QString configFile;
@@ -59,6 +63,7 @@ private:
    bool    saveonexit;
    bool    running;
    int     storytextsize;
+   QSize   windowsize;
    
    static QString filetag;
    static QString doctypetag;
@@ -66,9 +71,13 @@ private:
    static QString soetag;
    static QString ststag;
    static QString boolattr;
+   static QString winsztag;
+   static QString wideattr;
+   static QString hiattr;
    
    
    bool BoolOption (const QDomElement & el, const QString & attr);
+   QSize GetSize   (const QDomElement & el);
  
 };
 

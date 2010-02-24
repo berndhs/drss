@@ -27,7 +27,7 @@
    <string>DRSS News Reader</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="drss.qrc">
+   <iconset>
     <normaloff>:/drsslogo.png</normaloff>:/drsslogo.png</iconset>
   </property>
   <property name="toolButtonStyle">
@@ -402,6 +402,9 @@ story</string>
         <attribute name="headerVisible">
          <bool>false</bool>
         </attribute>
+        <attribute name="headerVisible">
+         <bool>false</bool>
+        </attribute>
        </widget>
        <widget class="QWebView" name="storyBrowser">
         <property name="minimumSize">
@@ -433,7 +436,7 @@ story</string>
      <x>0</x>
      <y>0</y>
      <width>627</width>
-     <height>28</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -606,12 +609,12 @@ story</string>
   <customwidget>
    <class>deliberate::ADClock</class>
    <extends>QWidget</extends>
-   <header location="global">aclock.h</header>
+   <header location="global">../src/aclock.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="drss.qrc"/>
+  <include location="../drss.qrc"/>
  </resources>
  <connections/>
 </ui>

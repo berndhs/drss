@@ -21,7 +21,10 @@ QString DRSSConfig::filetag   ("feedfile");
 QString DRSSConfig::anatag   ("analogclock");
 QString DRSSConfig::soetag   ("saveonexit");
 QString DRSSConfig::ststag   ("storytextsize");
+QString DRSSConfig::winsztag ("windowsize");
 QString DRSSConfig::boolattr ("yesorno");
+QString DRSSConfig::wideattr ("width");
+QString DRSSConfig::hiattr   ("height");
 int     DRSSConfig::maxTextFactor (10000);
 int     DRSSConfig::minTextFactor (10);
 
@@ -36,7 +39,8 @@ DRSSConfig::DRSSConfig (const DRSSConfig &cfg)
  analog(cfg.analog),
  saveonexit(cfg.saveonexit),
  running(false),
- storytextsize(cfg.storytextsize)
+ storytextsize(cfg.storytextsize),
+ windowsize(cfg.windowsize)
 {
   changed = true;
 }
@@ -50,6 +54,7 @@ DRSSConfig::operator= (const DRSSConfig & cfg)
   saveonexit = cfg.saveonexit;
   running = false;
   storytextsize = cfg.storytextsize;
+  windowsize = cfg.windowsize;
   changed = true;
   return *this;
 }
@@ -64,6 +69,7 @@ DRSSConfig::SetDefault ()
   saveonexit = true;
   storytextsize = 75;
   changed = false;
+  windowsize = QSize (600,400);
 }
 
 void
@@ -90,6 +96,8 @@ DRSSConfig::Read ()
       SetAnalog (BoolOption(el,boolattr));
     } else if (el.tagName () == soetag) {
       SetSaveOnExit (BoolOption(el,boolattr));
+    } else if (el.tagName () == winsztag) {
+      SetSize (GetSize (el));
     } else if (el.tagName () == ststag) {
       int sz = el.attribute("percent").toInt();
       if (sz < minTextFactor) { sz = minTextFactor; }
@@ -107,6 +115,24 @@ DRSSConfig::BoolOption (const QDomElement & el,
   QString yes = QString("yes").toLower();
   bool y = (yesorno == yes);
   return y;
+}
+
+QSize
+DRSSConfig::GetSize (const QDomElement & el)
+{
+  int wide,hi;
+  
+  if (el.hasAttribute(wideattr)) {
+    wide = el.attribute (wideattr).toInt();
+  } else {
+    wide = -1;
+  }
+  if (el.hasAttribute(hiattr)) {
+    hi   = el.attribute (hiattr).toInt();
+  } else {
+    hi = -1;
+  }
+  return QSize (wide,hi);
 }
 
 void
@@ -142,6 +168,11 @@ DRSSConfig::Write ()
   el = dom.createElement (ststag);
   int sz = StoryTextSize();
   el.setAttribute("percent",QString::number(sz));
+  root.appendChild (el);
+  
+  el = dom.createElement (winsztag);
+  el.setAttribute (hiattr, QString::number(windowsize.height()));
+  el.setAttribute (wideattr, QString::number(windowsize.width()));
   root.appendChild (el);
   
   QByteArray bytes;

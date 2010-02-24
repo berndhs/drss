@@ -73,7 +73,6 @@ int main (int argc, char *argv[])
   QString feedfile (config.FeedListFile());
   opt.SetStringOpt ("feeds",feedfile);
   config.SetFeedListFile (feedfile);
-  
   Docu theDoc(&App, config);
     
   theDoc.Show();

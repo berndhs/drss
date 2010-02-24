@@ -18,12 +18,12 @@ RESOURCES += drss.qrc
 
 MAKEFILE = Make_Q
 
-FORMS += drssmain.ui \
-         feededit.ui \
-         prefedit.ui \
-         helpwin.ui \
-         probelinks.ui \
-         getstring.ui
+FORMS += ui/drssmain.ui \
+         ui/feededit.ui \
+         ui/prefedit.ui \
+         ui/helpwin.ui \
+         ui/probelinks.ui \
+         ui/getstring.ui
 
 TRANSLATIONS = drss_de.ts \
                drss_ro.ts
@@ -43,41 +43,41 @@ CONFIG(debug, debug|release) {
 
 
 SOURCES = \
-          rssfeed.cpp \
-          feedlist.cpp \
-          docu.cpp \
-          maindrss.cpp \
-          drssconfig.cpp \
-          editfeed.cpp \
-          rssitem.cpp \ 
-          version.cpp \
-          newsbox.cpp \
-          cmdoptions.cpp \
-          textbox.cpp \
-          drssdebug.cpp \
-          storylist.cpp \
-          prefedit.cpp \
-          helpview.cpp \
-          drssfileformat.cpp \
-          aclock.cpp
+          src/rssfeed.cpp \
+          src/feedlist.cpp \
+          src/docu.cpp \
+          src/maindrss.cpp \
+          src/drssconfig.cpp \
+          src/editfeed.cpp \
+          src/rssitem.cpp \ 
+          src/version.cpp \
+          src/newsbox.cpp \
+          src/cmdoptions.cpp \
+          src/textbox.cpp \
+          src/drssdebug.cpp \
+          src/storylist.cpp \
+          src/prefedit.cpp \
+          src/helpview.cpp \
+          src/drssfileformat.cpp \
+          src/aclock.cpp
          
 
-HEADERS = docu.h \
-          drssconfig.h \
-          newsbox.h \
-          feedindex.h \
-          rssfeed.h \
-          feedlist.h \
-          editfeed.h \
-          version.h \
-          rssitem.h \
-          cmdoptions.h \
-          textbox.h \
-          drssdebug.h \
-          storylist.h \
-          prefedit.h \
-          helpview.h \
-          drssfileformat.h \
-          aclock.h
+HEADERS = src/docu.h \
+          src/drssconfig.h \
+          src/newsbox.h \
+          src/feedindex.h \
+          src/rssfeed.h \
+          src/feedlist.h \
+          src/editfeed.h \
+          src/version.h \
+          src/rssitem.h \
+          src/cmdoptions.h \
+          src/textbox.h \
+          src/drssdebug.h \
+          src/storylist.h \
+          src/prefedit.h \
+          src/helpview.h \
+          src/drssfileformat.h \
+          src/aclock.h
 
 

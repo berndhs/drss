@@ -41,8 +41,14 @@ NewsBox::Reconfigure (DRSSConfig & config)
   ShowAnalog  (config.Analog());
   float scale = float(config.StoryTextSize()) / 100.0;
   storyBrowser->setTextSizeMultiplier(scale);
+  resize (config.Size());
 }
 
+void
+NewsBox::resizeEvent (QResizeEvent * event)
+{
+  emit SigSizeChange (event->size());
+}
 
 void
 NewsBox::quit ()

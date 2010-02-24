@@ -68,6 +68,8 @@ Docu::Docu (QApplication *papp, DRSSConfig & conf)
   saveT.start (5*60*1000); // 5 minutes
   
   nb.Reconfigure (config);
+  connect (&nb, SIGNAL (SigSizeChange(const QSize)), 
+         this, SLOT (NewSize(const QSize)));
   SetupSubmenu ();
 }
 
@@ -77,6 +79,12 @@ Docu::SetupSubmenu ()
   callProbeNew = feedDetailMenu.addAction (tr("Check for Updates"));
   callMarkRead = feedDetailMenu.addAction (tr("Mark as Read"));
   callEditFeed = feedDetailMenu.addAction (tr("Edit"));
+}
+
+void
+Docu::NewSize (const QSize newsz)
+{
+  config.SetSize (newsz);
 }
 
 
@@ -725,6 +733,7 @@ Docu::Shutdown ()
   if (config.SaveOnExit()) {
     SaveFeeds (true);
   }
+  config.Write ();
   DitchFeed ();
   pApp->quit();
 }
