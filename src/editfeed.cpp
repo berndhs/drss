@@ -246,7 +246,7 @@ EditFeed::PopulateFromAtomDoc (QDomElement & el)
   QString weblink;
   QString title;
   QString author;
-  QString description (tr("cannot find Atom feed data"));
+  QString description (tr(""));
   bool foundsomething(false);
   for (QDomElement child = el.firstChildElement();
        !child.isNull();
