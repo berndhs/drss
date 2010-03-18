@@ -376,6 +376,18 @@ EditFeed::CatchProbe(QNetworkReply * reply)
   reply->deleteLater();
   QDomElement root = doc.documentElement();
   QString tag = root.tagName();
+  if (tag == "") {
+    // failed, see if we can do something about it
+    QUrl url = reply->url();
+    QString scheme = url.scheme();
+    if (scheme == "https") {
+      // try again with plain http
+      url.setScheme ("http");
+      QString plainurl = url.toString();
+      ProbeChannel (plainurl);
+      return;
+    }
+  }
   if (tag == "html") {
     ProbeHtml(root);
     return;
