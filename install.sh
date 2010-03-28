@@ -14,9 +14,7 @@
 # // of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 # //
 
-DIR_BIN=./bin
 SYS_DEST_DIR=/usr/local/bin
-INSTALL_SYS=yes
 INSTALL_CMD="install -p"
 ITEM_LIST="drss"
 
@@ -24,12 +22,8 @@ install_item () {
   ITEM=$1
   if [ -e $ITEM ]
   then
-    ${INSTALL_CMD} $ITEM $DIR_BIN
-    if [ $INSTALL_SYS == "yes" ]
-    then
-      ${INSTALL_CMD} $ITEM $SYS_DEST_DIR
-      echo ${INSTALL_CMD} $ITEM $SYS_DEST_DIR
-    fi
+    echo "Trying: " ${INSTALL_CMD} $ITEM $SYS_DEST_DIR
+    ${INSTALL_CMD} $ITEM $SYS_DEST_DIR
   else
     echo "cannot find " $ITEM " to install"
   fi
@@ -42,10 +36,9 @@ then
   if [ -d $D ]
   then
     SYS_DEST_DIR=$D
-    INSTALL_SYS=yes
   else
-    INSTALL_SYS=no
-    echo "$D is not a directory"
+    echo "cannot install in $D:  not a directory"
+    exit 1
   fi
 fi
 
