@@ -49,5 +49,39 @@ namespace deliberate {
   { 
     return ProgramName;
   }
+  
+  std::string VersionMajor ()
+  {
+    QString v = QString::fromStdString (ProgramVersion);
+    QStringList parts = v.split (".");
+    if (parts.isEmpty()) {
+      return "0";
+    }
+    return parts.first().toStdString();
+  }
+  
+  std::string VersionMinor ()
+  {
+    QString v = QString::fromStdString (ProgramVersion);
+    QStringList parts = v.split (".");
+    if (parts.isEmpty()) {
+      return "0";
+    }
+    parts.removeFirst();
+    if (parts.isEmpty ()) {
+      return "0";
+    }
+    return parts.first().toStdString();
+  }
+  
+  std::string VersionPatch ()
+  {
+    QString v = QString::fromStdString (ProgramVersion);
+    QStringList parts = v.split (".");
+    if (parts.isEmpty()) {
+      return "0";
+    }
+    return parts.last().toStdString();
+  }
 
 }

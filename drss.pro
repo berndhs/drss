@@ -16,7 +16,7 @@ QT += core gui xml network webkit
 
 RESOURCES += drss.qrc
 
-MAKEFILE = Make_Q
+MAKEFILE = MakeDRSS
 
 FORMS += ui/drssmain.ui \
          ui/feededit.ui \

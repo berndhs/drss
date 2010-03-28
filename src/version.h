@@ -21,6 +21,10 @@ namespace deliberate {
   
   void ShowVersionWindow();
   void CLIVersion();
+  
+  std::string VersionMajor ();
+  std::string VersionMinor ();
+  std::string VersionPatch ();
 
 }
 
