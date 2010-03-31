@@ -15,6 +15,7 @@
 
 EXEC = drss
 DRSS_MAKEFILE = Make_Q
+DESTDIR=$(HOME)/bin
 
 all:
 	sh build.sh
