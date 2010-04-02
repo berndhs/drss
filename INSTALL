@@ -3,7 +3,7 @@ Building from Source Code
 =========================
 
 This program requires the Qt4 toolset. If you don't have Qt, you can 
-get it from http://qt.nokia.com
+get it from http://qt.nokia.com. You need Qt 4.5 or later for DRSS.
      
 Qt4 is available for many platforms.
 
