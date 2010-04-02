@@ -16,6 +16,7 @@
 #include <QNetworkReply>
 #include <QNetworkAccessManager>
 #include <QStandardItem>
+#include <QUrl>
 #include <map>
 #include "ui_feededit.h"
 #include "ui_probelinks.h"
@@ -67,8 +68,8 @@ private:
   void EditFromQueue ();
   void ProbeChannel (const QString link);
               
-  void ProbeHtml (QDomElement & htmlEl);
-  void ProbeHtmlHead (QDomElement & head);
+  void ProbeHtml (QDomElement & htmlEl, QUrl topUrl);
+  void ProbeHtmlHead (QDomElement & head, QUrl topUrl);
   void PopulateFromRssDoc (QDomElement & el);
   void PopulateFromAtomDoc (QDomElement & el);
   bool ParseAtomLinkElem   (QDomElement & el, QString & xml, QString & web);

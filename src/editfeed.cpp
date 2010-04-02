@@ -301,7 +301,7 @@ EditFeed::ParseAtomAuthorElem (QDomElement &el, QString & name)
 }
 
 void
-EditFeed::ProbeHtmlHead (QDomElement & head)
+EditFeed::ProbeHtmlHead (QDomElement & head, QUrl topUrl)
 {
   QDomElement el;
   int numlinks(0);
@@ -334,6 +334,12 @@ EditFeed::ProbeHtmlHead (QDomElement & head)
     QString wantThis;
     for (int i=0; i<howmany; i++) {
       wantThis = userWants[i]->text();
+      QUrl wantUrl (wantThis);
+      if (wantUrl.scheme() == "") {
+        QUrl realWantUrl = topUrl;
+        realWantUrl.setPath (wantThis);
+        wantThis = realWantUrl.toString();
+      }
       newXmlList.append(wantThis);
     }
     delete askLinks;
@@ -343,13 +349,13 @@ EditFeed::ProbeHtmlHead (QDomElement & head)
 
 
 void
-EditFeed::ProbeHtml (QDomElement & htmlEl)
+EditFeed::ProbeHtml (QDomElement & htmlEl, QUrl topUrl)
 {
   QDomElement el;
   for (el = htmlEl.firstChildElement(); 
        !el.isNull(); el = el.nextSiblingElement()) {
     if (el.tagName() == "head") {
-      ProbeHtmlHead (el);
+      ProbeHtmlHead (el, topUrl);
     }
   }
 }
@@ -389,7 +395,7 @@ EditFeed::CatchProbe(QNetworkReply * reply)
     }
   }
   if (tag == "html") {
-    ProbeHtml(root);
+    ProbeHtml(root, reply->url());
     return;
   }
   if (!ok) {
