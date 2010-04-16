@@ -34,7 +34,7 @@ debug: $(MAKEFILE) FORCE
 release: $(MAKEFILE) FORCE
 	make -f $(MAKEFILE) release
 
-install: FORCE
+install: all FORCE
 	sh install.sh $(DESTDIR)
 
 userinstall:
