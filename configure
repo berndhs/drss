@@ -64,7 +64,7 @@ if [ ! $? == 0 ] ; then
 fi
 OSLEN=`expr match "Z$OS" "ZWindow"`
 if [ $OSLEN -gt 5 ] ; then
-  QM="${QM}.exe"
+  QM="qmake.exe"
   MAKE_PROGRAM="mingw32-make.exe"
 else
   MAKE_PROGRAM="make"
