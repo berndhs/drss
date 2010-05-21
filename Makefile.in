@@ -18,21 +18,21 @@ MAKEFILE = MakeDRSS
 TOP_MAKEFILE = Makefile
 
 all: $(MAKEFILE)
-	make -f $(MAKEFILE) all
+	$(MAKE) -f $(MAKEFILE) all
 
 clean: $(MAKEFILE) FORCE
-	make -f $(MAKEFILE) clean
+	$(MAKE) -f $(MAKEFILE) clean
 
 distclean: $(MAKEFILE) FORCE
-	make -f $(MAKEFILE) distclean
+	$(MAKE) -f $(MAKEFILE) distclean
 	rm -f $(MAKEFILE)
 	rm -f $(TOP_MAKEFILE)
 	
 debug: $(MAKEFILE) FORCE
-	make -f $(MAKEFILE) debug
+	$(MAKE) -f $(MAKEFILE) debug
 
 release: $(MAKEFILE) FORCE
-	make -f $(MAKEFILE) release
+	$(MAKE) -f $(MAKEFILE) release
 
 install: all FORCE
 	sh install.sh $(DESTDIR)

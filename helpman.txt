@@ -10,7 +10,7 @@ and decide which ones to visit on the web.
 
 Feed readers work similar to email clients, except that the stories (items) are
 pulled in on demand, rather than being pushed in by the sender. Using RSS news feeds,
-the user can subscribe and unsibscribe much more easily compared to mailing lists.
+the user can subscribe and unsubscribe much more easily compared to mailing lists.
 
 
 [[Feeds]]
@@ -125,7 +125,7 @@ To build and run DRSS, the current version uses:
 .. Gui
 .. Network
 .. Xml
-.. WebKist
+.. WebKit
 . Boost Program Options
 
 === How to Build
