@@ -14,6 +14,9 @@ CONFIG += qt app debug_and_release
 
 QT += core gui xml network webkit
 
+UI_DIR = tmp/ui
+MOC_DIR = tmp/moc
+
 RESOURCES += drss.qrc
 
 MAKEFILE = MakeDRSS
@@ -28,6 +31,8 @@ FORMS += ui/drssmain.ui \
 TRANSLATIONS = drss_de.ts \
                drss_ro.ts
          
+INCLUDEPATH += src
+
 CONFIG(release, debug|release) {
    DEFINES += QT_NO_DEBUG
    DEFINES += QT_NO_DEBUG_OUTPUT

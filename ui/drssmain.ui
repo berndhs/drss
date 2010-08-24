@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author>Bernd Stramm</author>
+ <author>Copyright (C) 2010 Bernd Stramm</author>
  <class>DRSSMain</class>
  <widget class="QMainWindow" name="DRSSMain">
   <property name="geometry">
@@ -27,7 +27,7 @@
    <string>DRSS News Reader</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="../drss.qrc">
     <normaloff>:/drsslogo.png</normaloff>:/drsslogo.png</iconset>
   </property>
   <property name="toolButtonStyle">
@@ -90,7 +90,7 @@
         <item row="1" column="0">
          <widget class="QPushButton" name="linkButton">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -127,7 +127,7 @@ story</string>
         <item row="1" column="1">
          <widget class="QPushButton" name="nextStoryButton">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -173,6 +173,12 @@ story</string>
         </item>
         <item row="1" column="2">
          <widget class="QPushButton" name="backStoryButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -252,6 +258,12 @@ story</string>
           </item>
           <item row="1" column="0">
            <widget class="QPushButton" name="exitButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="minimumSize">
              <size>
               <width>40</width>
@@ -316,6 +328,12 @@ story</string>
         </item>
         <item row="1" column="3">
          <widget class="QPushButton" name="mailButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="maximumSize">
            <size>
             <width>40</width>
@@ -436,7 +454,7 @@ story</string>
      <x>0</x>
      <y>0</y>
      <width>627</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
