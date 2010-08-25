@@ -21,7 +21,8 @@ NewsBox::NewsBox ()
 {
 
   setupUi(this);
-  clockWidget->Start();
+  mainSplitter->setStretchFactor (0,10);
+  mainSplitter->setStretchFactor (1,30);
   loadingPic.load(":/loading.png");
   notloadingPic.load(":/notloading.png");
   ShowAnalog (true);
@@ -84,11 +85,6 @@ NewsBox::ShowLoading (bool loading)
 void
 NewsBox::ShowAnalog (bool show)
 {
-  if (show) {
-    clockWidget->show();
-  } else {
-    clockWidget->hide();
-  }
 }
 
 void

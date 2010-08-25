@@ -93,7 +93,6 @@ Docu::ConnectButtons ()
 {
   connect (nb.actionExit, SIGNAL(triggered()),this,SLOT ( Shutdown ()));
   connect (nb.actionExit1, SIGNAL(triggered()),this,SLOT ( Shutdown ()));
-  connect (nb.exitButton, SIGNAL(clicked()),this,SLOT ( Shutdown ()));
   connect (nb.importOPML, SIGNAL(triggered()),this,SLOT ( ImportOPML ()));
   connect (nb.importDRSS, SIGNAL( triggered()),this,SLOT ( ImportDRSS ()));
   connect (nb.linkButton, SIGNAL (clicked()),this,SLOT ( DoNewsLink ()));
@@ -321,10 +320,10 @@ Docu::MailStory ()
     QString subject = tr("Re:") + curStory->Title();
     QString body;
     QString intro;
-    intro = tr("about: ") + curFeed->Title() + "\r\n"
-                  + tr(" story ") +  "<a href=\"" 
-                  + curStory->Link() + "\">"
-                  + curStory->Title() + "</a>\r\n";
+    intro = tr("About:\r\n") + curFeed->Title() + "\r\n"
+                  + tr(" Link:\r\n") 
+                  + curStory->Link().trimmed() + "\r\n"
+                  + curStory->Title().trimmed() + "\r\n";
     QString auth = curStory->Author();
     if (auth.length() > 0) {
       intro.append(tr(" by: ") + auth + "\r\n");

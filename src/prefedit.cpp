@@ -32,7 +32,6 @@ PrefEdit::Reset ()
 {
   if (pOrigConfig) {
     feedFileEdit->setText (tmpConfig.FeedListFile());
-    showAnalogCheck->setCheckState (State (tmpConfig.Analog()));
     saveOnExitCheck->setCheckState (State (tmpConfig.SaveOnExit()));
     storyTextSize->setValue (tmpConfig.StoryTextSize());
   }
@@ -77,7 +76,6 @@ PrefEdit::DoOk ()
   if (running) {
     if (pOrigConfig) {
       pOrigConfig->SetFeedListFile(feedFileEdit->text());
-      pOrigConfig->SetAnalog (IsChecked (showAnalogCheck->checkState()));
       pOrigConfig->SetSaveOnExit (IsChecked (saveOnExitCheck->checkState()));
       pOrigConfig->SetStoryTextSize (storyTextSize->value());
       pOrigConfig->Write();

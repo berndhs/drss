@@ -72,19 +72,6 @@
       <enum>QFormLayout::ExpandingFieldsGrow</enum>
      </property>
      <item row="0" column="0">
-      <widget class="QLabel" name="analogClockLabel">
-       <property name="text">
-        <string>Show Clock</string>
-       </property>
-       <property name="buddy">
-        <cstring>showAnalogCheck</cstring>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QCheckBox" name="showAnalogCheck"/>
-     </item>
-     <item row="1" column="0">
       <widget class="QLabel" name="saveOnExitLabel">
        <property name="text">
         <string>Save On Exit</string>
@@ -94,10 +81,10 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
+     <item row="0" column="1">
       <widget class="QCheckBox" name="saveOnExitCheck"/>
      </item>
-     <item row="2" column="0">
+     <item row="1" column="0">
       <widget class="QLabel" name="storyTextSizeLabel">
        <property name="text">
         <string>Story Text Size (%)</string>
@@ -107,7 +94,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
+     <item row="1" column="1">
       <widget class="QSpinBox" name="storyTextSize">
        <property name="minimumSize">
         <size>
