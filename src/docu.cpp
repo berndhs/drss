@@ -18,7 +18,6 @@
 #include <QFileDialog>
 #include <iostream>
 #include "newsbox.h"
-#include "aclock.h"
 #include "textbox.h"
 #include "drssdebug.h"
 

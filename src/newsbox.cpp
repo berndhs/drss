@@ -25,7 +25,6 @@ NewsBox::NewsBox ()
   mainSplitter->setStretchFactor (1,30);
   loadingPic.load(":/loading.png");
   notloadingPic.load(":/notloading.png");
-  ShowAnalog (true);
   busy = 0;
   busyCount->show();
   busyCount->setText("");
@@ -39,7 +38,6 @@ NewsBox::NewsBox ()
 void
 NewsBox::Reconfigure (DRSSConfig & config)
 {
-  ShowAnalog  (config.Analog());
   float scale = float(config.StoryTextSize()) / 100.0;
   storyBrowser->setTextSizeMultiplier(scale);
   resize (config.Size());
@@ -81,11 +79,6 @@ NewsBox::ShowLoading (bool loading)
   }
 }
 
-
-void
-NewsBox::ShowAnalog (bool show)
-{
-}
 
 void
 NewsBox::ShowBusy ()

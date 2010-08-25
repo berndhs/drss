@@ -17,7 +17,6 @@
 #include <QResizeEvent>
 
 #include "ui_drssmain.h"
-#include "aclock.h"
 #include "drssconfig.h"
 
 namespace deliberate {
@@ -39,8 +38,6 @@ public:
    void Clear ();
    
    void ShowLoading (bool loading = true);
-   void ShowDigital (bool show = true);
-   void ShowAnalog  (bool show = true);
    
    void MarkStoryBold (const int row, const bool isbold);
    
