@@ -64,7 +64,6 @@ SOURCES = \
           src/prefedit.cpp \
           src/helpview.cpp \
           src/drssfileformat.cpp \
-          src/aclock.cpp
          
 
 HEADERS = src/docu.h \
@@ -83,6 +82,5 @@ HEADERS = src/docu.h \
           src/prefedit.h \
           src/helpview.h \
           src/drssfileformat.h \
-          src/aclock.h
 
 
