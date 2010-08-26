@@ -16,6 +16,11 @@
 PRO_FILE = drss.pro
 MAKEFILE = MakeDRSS
 TOP_MAKEFILE = Makefile
+TARGET = drss
+DESKTOP_FILE = drss.desktop
+DESKTOP_DIR = /usr/share/applications
+ICON_FILE = drss.png
+ICON_DIR = /usr/share/pixmaps
 
 all: $(MAKEFILE)
 	$(MAKE) -f $(MAKEFILE) all
@@ -35,7 +40,14 @@ release: $(MAKEFILE) FORCE
 	$(MAKE) -f $(MAKEFILE) release
 
 install: all FORCE
-	sh install.sh $(DESTDIR)
+	install -d $(DESTDIR)
+	install -m 0755 -p $(TARGET) $(DESTDIR)
+
+install_deb: install
+	install -d $(DESKTOP_DIR)
+	install -m 0644 -p $(DESKTOP_FILE) $(DESKTOP_DIR)
+	install -d $(ICON_DIR)
+	install -m 0644 -p $(ICON_FILE) $(ICON_DIR)
 
 userinstall:
 	sh install.sh $(HOME)/bin
